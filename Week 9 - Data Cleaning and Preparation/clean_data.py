@@ -15,7 +15,7 @@ import pandas as pd
 import numpy as np
 
 # Load Dataframe
-df = pd.read_excel("Healthcare_dataset.xlsx", sheet_name= 'Dataset')
+df = pd.read_excel("C:/Users/msavg/Documents/Healthcare-Drug_Persistency/Healthcare_dataset.xlsx", sheet_name= 'Dataset')
 
 
 ###############################################################################################################################################################
@@ -112,10 +112,12 @@ for column in df.columns:
 # SAVE FILE
 
 # Save the loaded sheet as a .csv file
-df.to_csv('healthcare_data_cleaned.csv', index=False)
+df.to_csv('C:/Users/msavg/Documents/Healthcare-Drug_Persistency/Week 9 - Data Cleaning and Preparation/healthcare_data_cleaned.csv', index=False)
+df = None
 ###########################################
 
-
+# CONFIRMATION OF COMPLETION
+print('Cleaning of Healthcare_dataset completed!')
 
 
 
